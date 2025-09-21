@@ -21,17 +21,17 @@
 </head>
 
 <body>
-    <!-- 這裡先用 true (登入成功) /  false (未登入) 切換版型 -->
-    <% if (true) { %>
-    <!-- 登入成功時顯示 -->
-    <%- include('./layout/header-profile'); -%> <% } else { %>
-    <!-- 未登入時顯示 -->
-    <%- include('./layout/header'); -%> <% } %>
-            <!-- section 1 雪夜莓語主視覺 -->
+  <!-- 這裡先用 true (登入成功) /  false (未登入) 切換版型 -->
+  <% if (true) { %>
+  <!-- 登入成功時顯示 -->
+  <%- include('./layout/header-profile'); -%> <% } else { %>
+  <!-- 未登入時顯示 -->
+  <%- include('./layout/header'); -%> <% } %>
+  <!-- section 1 雪夜莓語主視覺 -->
 
 
-            <!-- 商品詳情-星塵草莓 頁面 -->
-            <section>
+  <!-- 商品詳情-星塵草莓 頁面 -->
+  <section>
               <!-- 麵包屑 -->
               <div class="container mb-4 mb-lg-8">
                 <nav>
@@ -181,10 +181,9 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <!-- 加入購物車model -->
-            <div class="modal" tabindex="-1" id="joinCart" aria-labelledby="joinCartLabel"
-        aria-hidden="true">
+  </section>
+  <!-- 加入購物車model -->
+  <div class="modal" tabindex="-1" id="joinCart" aria-labelledby="joinCartLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content modal_set br-32 py-10 mx-auto">
                   <div class="d-flex flex-column justify-content-center align-items-center">
@@ -195,10 +194,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- 加入我的收藏model -->
-            <div class="modal" tabindex="-1" id="joinFavorite" aria-labelledby="joinFavoriteLabel"
-        aria-hidden="true">
+  </div>
+  <!-- 加入我的收藏model -->
+  <div class="modal" tabindex="-1" id="joinFavorite" aria-labelledby="joinFavoriteLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content modal_set br-32 py-10 mx-auto">
                   <div class="d-flex flex-column justify-content-center align-items-center">
@@ -211,14 +209,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+  </div>
 
-
-            <%- include('./layout/footer'); -%>
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-              <script type="module" src="../main.js"></script>
+  <%- include('./layout/footer'); -%>
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>
