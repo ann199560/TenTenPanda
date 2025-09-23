@@ -1,0 +1,24 @@
+.cart-img{
+    width: 150px;
+    height: auto;    
+    @include media-breakpoint-up(lg){
+        width: 150px;
+        height: auto;
+    }
+}
+.cart-checkout-btn{
+    border: 0;
+    background-color: transparent;
+    &:hover{
+        color: #CD6D12;
+    }
+    &-x{
+        color: $neutral-40;
+    }
+}
+.cart-border-top{
+    border: 0;
+    @include media-breakpoint-up(lg){
+        border-top: 1px solid $neutral-40;
+    }
+}

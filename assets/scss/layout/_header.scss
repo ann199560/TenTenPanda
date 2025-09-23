@@ -112,13 +112,13 @@
 }
 
 // ICON 狀態
-.bg-primary-20:hover,
-.bg-primary-20:active {
+.headerBtn .bg-primary-20:hover,
+.headerBtn .bg-primary-20:active {
   background-color: $primary-40 !important;
 }
 
-.bg-primary-20:hover svg,
-.bg-primary-20:active svg{
+.headerBtn .bg-primary-20:hover svg,
+.headerBtn .bg-primary-20:active svg{
   color: $neutral-white !important;
 }
 

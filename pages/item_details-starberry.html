@@ -21,22 +21,22 @@
 </head>
 
 <body>
-  <!-- 這裡先用 true (登入成功) /  false (未登入) 切換版型 -->
-  <% if (true) { %>
-  <!-- 登入成功時顯示 -->
-  <%- include('./layout/header-profile'); -%> <% } else { %>
-  <!-- 未登入時顯示 -->
-  <%- include('./layout/header'); -%> <% } %>
-  <!-- section 1 雪夜莓語主視覺 -->
+  
+    <div id="userHeader">
+      <%- include('./layout/header-profile'); -%>
+    </div>
+    <div id="guestHeader">
+      <%- include('./layout/header'); -%>
+    </div>
 
 
   <!-- 商品詳情-星塵草莓 頁面 -->
-  <section>
+  <section class="py-lg-14 py-8">
               <!-- 麵包屑 -->
               <div class="container mb-4 mb-lg-8">
                 <nav>
                   <ol class="breadcrumb">
-                    <li class="bread-item"><a href="#"><img src="../assets/images/icon-home.svg" alt=""></a></li>
+                    <li class="bread-item"><a href="index.html"><img src="../assets/images/icon-home.svg" alt=""></a></li>
                     <li class="d-flex align-items-center">
                       <span class="material-symbols-outlined text-neutral-60 mx-2">keyboard_double_arrow_right</span>
                       <a href="#"></a>

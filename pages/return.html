@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS/Js -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ICON -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <title>甜甜熊貓｜TenTen Donut - 甜點專賣</title>
+  </head>
+  <body>
+    <div id="userHeader">
+      <!-- 已登入 -->
+      <%- include('./layout/header-profile'); -%>
+    </div>
+    <div id="guestHeader">
+      <!-- 未登入時顯示 -->
+      <%- include('./layout/header'); -%>
+    </div>
+
+    <main class="login-bg border-top border-bottom border-lg-0 position-relative">
+      <div class="login container py-lg-14 py-8 px-3 px-lg-0">
+        <div class="row d-lg-flex justify-content-center">
+          <!-- 麵包屑 -->
+          <div class="container mb-4 mb-lg-8">
+            <nav>
+              <ol class="breadcrumb">
+                <li class="bread-item"><a href="../pages/index.html"><img src="../assets/images/icon-home.svg" alt=""></a></li>
+                <li class="d-flex align-items-center">
+                  <span class="material-symbols-outlined text-neutral-60 mx-2">keyboard_double_arrow_right</span>
+                  <a href="#"></a>
+                </li>
+                <li class="bread-item text-neutral-80 fw-bold active" aria-current="page">退換貨政策</li>
+              </ol>
+            </nav>
+          </div>
+          <!-- 退換貨政策 -->
+          <div class="w-100">
+            <!-- 歡迎詞 -->
+            <h4 class="fs-lg-2 fs-4 fw-bold mb-lg-10 text-neutral-100 mb-6 text-center">
+                退換貨政策
+            </h4>
+            <!-- 第一項 -->
+            <div class="mb-lg-10 mb-8">
+              <h5 class="fs-lg-5 fs-6 fw-bold text-neutral-100 mb-4">
+                一、退換貨流程 
+              </h5>
+              <ol class="list-style-num mb-8">
+                <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">
+                  於甜甜熊貓官方購物商城下方，點擊 IG 或 Facebook 進到粉絲專頁私訊小編。
+                </li>
+                <li class="fs-lg-9 fs-7 text-neutral-100 lh-base">
+                  留下訂單相關資訊(訂單編號、姓名、聯絡電話、退換貨原因)，我們將盡速與您聯繫。
+                </li>
+              </ol>
+              <p class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">※ 離島購買無退換貨服務。</p>
+              <p class="fs-lg-9 fs-7 text-neutral-100 lh-base">※ <span class="fw-bold">提醒您</span>，若遇產品問題時，建議拍照錄影以做為您的保障。</p>
+            </div>
+            <!-- 第二項 -->
+            <div class="mb-lg-10 mb-8">
+              <h5 class="fs-lg-5 fs-6 fw-bold text-neutral-100 mb-4">
+                二、退款方式 
+              </h5>
+              <ol class="list-style-num">
+                <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">
+                  符合退款標準之訂單，本公司將在收到退貨商品後進行退款，信用卡交易將在3日內進行退刷，其餘交易將進行人工退款作業，7~10個工作天後匯款至顧客指定帳戶。
+                </li>
+                <li class="fs-lg-9 fs-7 text-neutral-100 lh-base">
+                  超商代碼、虛擬ATM付款者將酌收金流手續費30元，訂單消費金額扣除手續費、運費，為最後退款之金額。
+                </li>
+              </ol>
+            </div>
+            <!-- 第三項 -->
+            <div class="mb-lg-14 mb-10">
+              <h5 class="fs-lg-5 fs-6 fw-bold text-neutral-100 mb-4">
+                三、退換貨須知
+              </h5>
+              <ol class="list-style-num">
+                <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-4">
+                  當日現做商品無法退換貨，甜甜圈屬於短效期食品、當日現做、需冷藏保存，根據《消費者保護法》及其合理例外規定，不適用7日鑑賞期。若遇到商品有明顯瑕疵或出貨錯誤，請在收到後2小時內拍照存證並聯繫我們，我們會盡快協助處理。
+                  <p class="fs-lg-9 fs-7 text-neutral-100 lh-base fw-bold mt-2">※ 若由他人代收（如：管理室、親友），亦視為您本人收貨，請留意保存與時效責任。</p>
+                </li>
+                <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-4">
+                  如遇以下狀況，商品將視為您主動放棄，<span class="fw-bold">恕不再另行補寄或退款，並需負擔運費與費用</span>：
+                  <ol class="list-style mt-2">
+                    <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">配送兩次失敗無人簽收。</li>
+                    <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">約定時間未領取。</li>
+                    <li class="fs-lg-9 fs-7 text-neutral-100 lh-base">聯絡資訊錯誤或無法取得聯繫。</li>
+                  </ol>
+                </li>
+                <li class="fs-lg-9 fs-7 text-neutral-100 lh-base">
+                  申請退換貨時，請您以送貨廠商使用之包裝紙箱將退貨商品包裝妥當，若原紙箱已遺失，請另使用其他紙箱包覆於商品原廠包裝之外，請勿直接在商品包裝上黏貼紙張或書寫文字，若原廠商品包裝損毀將無法退貨。若是使用優惠券、優惠代碼購買商品者進行退換貨，退款會以使用優惠後的金額為準，無法取回優惠券，請見諒。
+                </li>
+              </ol>
+            </div>
+            <!-- 客服資訊 -->
+            <ol class="text-lg-start text-center">
+              <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">
+                <span class="fw-bold">客服時間：</span>9:00-18:00
+              </li>
+              <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">
+                <span class="fw-bold">客服專線：</span>0912-345-678
+              </li>
+              <li class="fs-lg-9 fs-7 text-neutral-100 lh-base">
+                  <span class="fw-bold">客服信箱：</span>tenten@g​mail.com
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+
+  </body>
+</html>

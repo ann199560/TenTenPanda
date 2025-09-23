@@ -40,7 +40,7 @@
         class="navbar-toggler bg-primary-20 p-0 border-0"
         type="button"
         data-bs-toggle="modal"
-        data-bs-target="#modal-menu"
+        data-bs-target="#modal-menu-profile"
         aria-controls="menu"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -51,16 +51,16 @@
       <!-- 導航選單 -->
       <div class="collapse navbar-collapse position-absolute start-0" id="menu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
-          <li class="nav-item p-4 me-8 fs-6"><a class="nav-link text-neutral-100" href="#">品牌故事</a>
+          <li class="nav-item p-4 me-8 fs-6"><a class="nav-link text-neutral-100" href="../pages/story.html">品牌故事</a>
           </li>
-          <li class="nav-item p-4 me-8 fs-6"><a class="nav-link text-neutral-100" href="#">最新消息</a></li>
+          <li class="nav-item p-4 me-8 fs-6"><a class="nav-link text-neutral-100" href="news.html">最新消息</a></li>
           <!-- Dropdown -->
           <li class="nav-item dropdown p-4">
             <a class="nav-link dropdown-toggle no-caret fs-6 fw-700 text-neutral-100" href="#" id="productList" role="button" data-bs-toggle="dropdown" aria-expanded="false">商品列表</a>
             <ul class="dropdown-menu border-0 br-bl-16 br-br-16 text-center fs-6" aria-labelledby="productList">
-              <li><a class="dropdown-item p-4 text-neutral-100" href="#">經典口味</a></li>
-              <li><a class="dropdown-item p-4 text-neutral-100" href="#">季節限定</a></li>
-              <li><a class="dropdown-item p-4 text-neutral-100" href="#">甜甜禮盒</a></li>
+              <li><a class="dropdown-item p-4 text-neutral-100" href="productList-classic.html">經典口味</a></li>
+              <li><a class="dropdown-item p-4 text-neutral-100" href="productList-seasonal.html">季節限定</a></li>
+              <li><a class="dropdown-item p-4 text-neutral-100" href="productList-giftbox.html">甜甜禮盒</a></li>
             </ul>
           </li>
         </ul>
@@ -88,10 +88,10 @@
             </div>
           </a>
           <ul class="dropdown-menu border-0 br-bl-16 br-br-16 text-center fs-6" aria-labelledby="productList">
-            <li><a class="dropdown-item p-4 text-neutral-100" href="#">個人資訊</a></li>
-            <li><a class="dropdown-item p-4 text-neutral-100" href="#">我的收藏</a></li>
-            <li><a class="dropdown-item p-4 text-neutral-100" href="#">我的訂單</a></li>
-            <li><a class="dropdown-item p-4 text-neutral-100" href="#">登出</a></li>
+            <li><a class="dropdown-item p-4 text-neutral-100" href="myInfo.html">個人資訊</a></li>
+            <li><a class="dropdown-item p-4 text-neutral-100" href="myFavorite.html">我的收藏</a></li>
+            <li><a class="dropdown-item p-4 text-neutral-100" href="myOrders.html">我的訂單</a></li>
+            <li><a class="dropdown-item p-4 text-neutral-100" href="index.html" id="logoutBtn">登出</a></li>
           </ul>
         </li> 
       </ul>     
@@ -117,7 +117,7 @@
     </div>
   </div>
   <!-- Modal (行動版選單) -->
-  <div class="modal fade d-lg-none" id="modal-menu" tabindex="-1" aria-hidden="true">
+  <div class="modal fade d-lg-none" id="modal-menu-profile" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen-sm-down">
       <div class="modal-content p-3 modal-height">
         <div
@@ -175,14 +175,14 @@
         <div class="modal-body bg-primary-tint p-5 pb-20 br-bl-40 br-br-40">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <button class="nav-link mb-6 py-3 ps-1 text-neutral-100" type="button">
+              <a href="story.html" type="button" class="nav-link mb-6 py-3 ps-1 text-neutral-100">
                 品牌故事
-              </button>
+              </a>
             </li>
             <li class="nav-item">
-              <button class="nav-link mb-6 py-3 ps-1 text-neutral-100" type="button">
+              <a class="nav-link mb-6 py-3 ps-1 text-neutral-100" href="news.html">
                 最新消息
-              </button>
+              </a>
             </li>
             <!-- 下拉選單 -->
             <li class="nav-item dropdown">
@@ -203,17 +203,17 @@
                 aria-labelledby="productList"
               >
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="#"
+                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="productList-classic.html"
                     >經典口味</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="#"
+                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="productList-seasonal.html"
                     >季節限定</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 mb-6 text-neutral-100" href="#">甜甜禮盒</a>
+                  <a class="dropdown-item mx-4 py-3 ps-1 mb-6 text-neutral-100" href="productList-giftbox.html">甜甜禮盒</a>
                 </li>
               </ul>
             </li>
@@ -237,26 +237,26 @@
                 aria-labelledby="user"
               >
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="#"
+                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="myInfo.html"
                     >個人資訊</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="#"
+                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="myFavorite.html"
                     >我的收藏</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="#">我的訂單</a>
+                  <a class="dropdown-item mx-4 py-3 ps-1 mb-2 text-neutral-100" href="myOrders.html">我的訂單</a>
                 </li>
                 <li>
-                  <a class="dropdown-item mx-4 py-3 ps-1 text-neutral-100" href="#">登出</a>
+                  <a class="dropdown-item mx-4 py-3 ps-1 text-neutral-100" href="index.html" id="logoutBtnMb">登出</a>
                 </li>                
               </ul>
             </li>            
           </ul>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
   <!-- Modal (購物車清單) -->
@@ -330,7 +330,7 @@
             <p class="text-neutral-100 fw-bold px-3 py-6 fs-5">NT$ <span>255</span></p>
           </div> 
           <div class="modal-footer border-0 p-0 py-4">
-            <button class="btn br-4 btn-outline-primary-80 bg-neutral-white text-primary-80 px-8 py-4 fs-6">立即購買</button>
+            <a class="btn br-4 btn-outline-primary-80 bg-neutral-white text-primary-80 px-8 py-4 fs-6" href="cart.html">立即購買</a>
           </div>
         </div>
         <!-- 桌面版 -->
@@ -397,7 +397,7 @@
             <p class="text-neutral-100 fw-bold px-3 py-6 fs-5">NT$ <span>255</span></p>
           </div>   
           <div class="modal-footer border-0 p-0">
-            <button class="btn br-4 btn-outline-primary-80 bg-neutral-white text-primary-80 px-8 py-4 fs-6">立即購買</button>
+            <a class="btn br-4 btn-outline-primary-80 bg-neutral-white text-primary-80 px-8 py-4 fs-6" href="cart.html">立即購買</a>
           </div>
         </div>
       </div>

@@ -9,8 +9,39 @@
   <body>
     <%- include('./layout/header'); -%>
     <h1>我是about</h1>
+    <div style="width: 300px;">
+      <img id="sl-product-image" src="../assets/images/ad-news-1.png" alt="" style="width: 100%;"/>
+    </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
+    <script>
+      $(function () {
+        /** ===============================
+         *  1. 商品圖片 Zoom
+         * =============================== */
+        function setZoomIn() {
+          setTimeout(function () {
+            var targetImg = $("#sl-product-image");
+            var originImgUrl = targetImg.attr("src");
+            targetImg.parent().trigger("zoom.destroy").zoom({
+              url: originImgUrl,
+              magnify: 1,
+            });
+          });
+        }
+        // 監聽商品圖片變化
+        var mainPictureObserver = new MutationObserver(function () {
+          setZoomIn();
+        });
+        var targetImage = $("#sl-product-image").get(0);
+        if (targetImage) {
+          mainPictureObserver.observe(targetImage, { attributes: true });
+          setZoomIn();
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,99 @@
+
+.img-col{
+    height: 351px;
+    @include media-breakpoint-up(lg){
+        height: 420px;
+    }
+}
+
+.story-img{
+    @include media-breakpoint-up(lg){
+        object-position:50% 70%;
+    }
+}
+
+.single-panda{
+    height: 250px;
+    @include media-breakpoint-up(lg){
+        height: 400px;
+    }
+}
+
+.team-panda{
+    height: 400px;
+    @include media-breakpoint-up(lg){
+        height: 600px;
+    }
+}
+
+.s4-intro{
+    max-width: 100%;
+    @include media-breakpoint-up(lg){
+        max-width: 636px;
+        max-height: 321px;
+        margin-right: 312px;
+        margin-left: auto;
+    }
+}
+
+.s4-img{
+    padding-right: 0px;
+    @include media-breakpoint-up(lg){
+        padding-right: 148px!important;
+    }
+}
+
+.s4-img-col{
+    height: 176px;
+    //x軸、y軸、顏色
+    box-shadow: 4px 6px $primary-40;
+    @include media-breakpoint-up(lg){
+        max-width: 800px;
+        box-shadow: -24px 16px $primary-40;
+        height: 320px;
+    }
+}
+
+.s6-imgs{
+    height: 100px;
+    @include media-breakpoint-up(lg){
+        height: 360px;
+    }
+}
+
+.curve-line{
+    top: 410px;
+    max-width: 1400px;
+    left: -513px;
+    @include media-breakpoint-up(lg){
+        max-width: 1920px;
+        left: 0px;
+        top: 430px;
+    }
+}
+
+.graphic-3{
+    top: 0px;
+    left: -200px;
+}
+
+.graphic-4{
+    right: 0px;
+    bottom: 0px;
+    max-width: 160px;
+}
+
+.s4-graphic-4{
+    top: 0px;
+    right: 0px;
+}
+
+.graphic-5{
+    max-width: 130px;
+    bottom: 20px;
+    right: 0px;
+    @include media-breakpoint-up(lg){
+        max-width: 416px;
+        bottom: 0px;
+    }
+}

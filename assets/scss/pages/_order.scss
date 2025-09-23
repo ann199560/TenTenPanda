@@ -1,0 +1,118 @@
+.order-bg{
+    background-color: none;
+    @include media-breakpoint-up(lg) {
+        background-color: rgba(199, 199, 199, 0.15);
+    }
+}
+
+.order-progress-dot{
+    width: 24px;
+    height: 24px;
+    @include media-breakpoint-up(lg) {
+        width: 32px;
+        height: 32px;
+  }
+}
+.order-progress-leftline{
+    height: 2px;
+    width: 40%;
+    top: 28%;
+    left: 10%;
+    z-index: -1;
+    @include media-breakpoint-up(md){
+        width: 43%;
+        left: 7%;
+    }
+    @include media-breakpoint-up(lg){
+        width: 45%;
+        top: 36%;
+        left: 7%;
+    }
+}
+.order-progress-rightline{
+    height: 2px;
+    width: 40%;
+    top: 28%;
+    right: 8%;
+    z-index: -1;
+    @include media-breakpoint-up(md){
+        width: 43%;
+        right: 6%;
+    }
+    @include media-breakpoint-up(lg){
+        width: 44%;
+        top: 36%;
+        right: 6%;
+    }
+}
+
+//---
+
+.select-trigger {
+  padding:16px 20px; 
+  border-radius:8px;
+  cursor: pointer; 
+  background-color: rgba(199, 199, 199, 0.15);
+  .pay-dropdown-icon{
+      transform: rotate(180deg);      
+  }
+}
+/* 根據 radio checked 顯示哪個字串 */
+.select-trigger .selected span { 
+    display:none; 
+}
+#pay-none:checked ~ .css-select .select-trigger .sel-none { display:inline; }
+#pay-cod:checked  ~ .css-select .select-trigger .sel-cod  { display:inline; }
+#pay-online:checked ~ .css-select .select-trigger .sel-online { display:inline; }
+.pay-online-input { 
+    display: none; 
+}
+#pay-online:checked ~ .pay-online-input{
+    display: block;
+}
+
+/* options 面板 */
+.options {
+  left: 0; 
+  right: 0;
+  top: 100%;
+  background:#fff;
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height .22s ease, padding .22s;
+}
+
+/* 當 toggle 被打開，展開 options */
+.option:hover { 
+    color: $primary-60;
+}
+#pay-toggle:checked ~ .css-select .options {
+  max-height: 220px; 
+  padding:8px 0; 
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.pay-online-input-creditcard{
+    width: 100%;
+    @include media-breakpoint-up(lg){
+        width: 50%;
+    }
+    &-date{
+        width: 100%;
+        @include media-breakpoint-up(lg){
+            width: 50%;
+        }
+    }
+}
+
+.orer-details-bg{
+    background-color: $primary-tint;
+    @include media-breakpoint-up(lg){
+        background-color: white;
+    }
+}
+.orer-details-num-color{
+    color: $primary-40;
+    @include media-breakpoint-up(lg){
+        color: $neutral-60;
+    }
+}

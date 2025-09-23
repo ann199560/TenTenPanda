@@ -1,0 +1,53 @@
+// 收藏按鈕
+.favorite-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+}
+
+.favorite-btn .full {
+  display: none;
+  color: $primary-40;
+}
+
+.favorite-btn.active .empty {
+  display: none;
+}
+
+.favorite-btn.active .full {
+  display: inline-block;
+}
+
+// 購物車按鈕
+.producList-cart-btn {
+  border-radius: 50%;
+  background-color: $neutral-white;
+  border-color: $primary-40;
+  color: $primary-40;
+  padding: 8px 10px;
+}
+
+.producList-cart-btn:hover {
+  border-color: $neutral-white;  
+  background-color: $primary-40;
+  color: $neutral-white;
+}
+
+// 購物車互動視窗
+.cart {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: $primary-20;
+  color: $primary-40;
+  margin-bottom: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}

@@ -21,7 +21,7 @@ $font-sizes: (
   7: $h7-font-size,  // 14px
   8: $h8-font-size,  // 12px
   9: $h9-font-size,  // 16px
-  10: $h10-font-size
+  10: $h10-font-size  //72px
 ); 
 
 // 顏色變數 (定義)
@@ -91,3 +91,46 @@ $spacers: (
   29: $spacer * 7.25,  // 116px
   30: $spacer * 7.5,   // 120px
 ); 
+
+
+
+// input輸入框
+$input-padding-y: 16px;
+$input-padding-x: 20px;
+$input-line-height: 1.5;
+$input-bg: rgba(199, 199, 199, 0.15);
+$input-border-color: none;
+$input-border-radius: 8px;
+$input-placeholder-color: $neutral-60;
+$input-focus-box-shadow: 0 0 0 .25rem $primary-20; 
+
+// form-select選擇框
+$form-select-color: $neutral-60;
+$form-select-focus-box-shadow: 0 0 0 .25rem $primary-20;
+
+// accordion-button
+$accordion-button-active-bg: none;
+$accordion-button-focus-box-shadow:  none;
+$accordion-icon-color:  $primary-40;
+$accordion-icon-active-color: $primary-40;
+
+// 核取方塊背景
+$form-check-input-bg:                     $neutral-white !default;
+$form-check-input-checked-bg-color:       $primary-40 !default;
+
+// modal 滿版螢幕背景
+$modal-backdrop-bg:                  rgba($neutral-100, 0.4)!default;
+
+
+// scss-docs-start border-variables
+$border-width:                1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+$border-style:                solid !default;
+$border-color:                $neutral-40 !default;
+// scss-docs-end border-variables
