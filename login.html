@@ -32,7 +32,7 @@
     />
 
     <title>甜甜熊貓｜TenTen Donut - 甜點專賣</title>
-    <script type="module" crossorigin src="/TenTenPanda/assets/main-BGxC2fsY.js"></script>
+    <script type="module" crossorigin src="/TenTenPanda/assets/main-BWnwgyGg.js"></script>
     <link rel="stylesheet" crossorigin href="/TenTenPanda/assets/main-D9ViDa6v.css">
   </head>
   <body>
@@ -913,43 +913,10 @@
     <p>B-3 甜甜熊貓 ©2025 All Rights Reserved</p>
   </div>
 </footer>
-    <script>
-      const user = document.getElementById("userHeader");
-      const guest = document.getElementById("guestHeader");
-      let login_state = localStorage.getItem("isLogin") === "true";
-      function updateUI() {
-        let login_state = localStorage.getItem("isLogin");
-        if (login_state) {
-          guest.style.display = "none";
-          user.style.display = "block";
-        } else {
-          guest.style.display = "block";
-          user.style.display = "none";
-        }
-      }
-      updateUI();
-    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var swiper = new Swiper(".mySwiper", {
-          loop: true,
-          initialSlide: 0, // 強制從第一張開始
-          slidesPerView: 1,   // ⭐ 每次只顯示一張
-          autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-          },
-          on: {
-            afterInit: function () {
-              this.slideToLoop(0, 0); // 初始化後跳到真正的第一張
-            },
-          },
-        });
-      });
-    </script>
   </body>
 </html>
