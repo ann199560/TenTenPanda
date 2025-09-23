@@ -91,3 +91,23 @@ $spacers: (
   29: $spacer * 7.25,  // 116px
   30: $spacer * 7.5,   // 120px
 ); 
+
+// 核取方塊背景
+$form-check-input-bg:                     $neutral-white !default;
+$form-check-input-checked-bg-color:       $primary-40 !default;
+
+// modal 滿版螢幕背景
+$modal-backdrop-bg:                  rgba($neutral-100, 0.4)!default;
+
+// scss-docs-start border-variables
+$border-width:                1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+$border-style:                solid !default;
+$border-color:                $neutral-40 !default;
+// scss-docs-end border-variables

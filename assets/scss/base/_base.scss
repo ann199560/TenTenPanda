@@ -23,3 +23,20 @@ a {
   color: #212529;
   text-decoration: none;
 }
+
+// 通用連結
+.link {
+  color: $primary-40;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  
+  &:hover, &:active, &:focus {
+    color: $primary-80;
+    font-weight: bolder;
+  }
+}
+
+// 通用按鈕 disabled 狀態
+button:disabled{
+  background: $neutral-40 !important;
+}

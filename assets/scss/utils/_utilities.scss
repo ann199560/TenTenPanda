@@ -10,6 +10,7 @@ $utilities: (
       8: 8px,
       12: 12px,
       16: 16px,
+      24: 24px,
       32: 32px,
       40: 40px,
       56: 56px,
@@ -92,6 +93,66 @@ $utilities: (
       values: $font-sizes,
       responsive: true
     ),
+
+  // 新增透明度響應式
+  "opacity": (
+    property: opacity,
+    values: (
+      0: 0,
+      15: .15,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    ),
+    responsive: true,
+  ),
+
+    // border響應式
+    "border": (
+      property: border,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
+    "border-top": (
+      property: border-top,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
+    "border-end": (
+      property: border-right,
+      class: border-end,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
+    "border-bottom": (
+      property: border-bottom,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
+    "border-start": (
+      property: border-left,
+      class: border-start,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+      responsive: true,
+    ),
+    
+
 );
 
 // 重新定義 font-size
