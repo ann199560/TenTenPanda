@@ -756,11 +756,11 @@
                     class="form-control br-8 input-bg px-5 mb-2"
                     id="passwordInput"
                     placeholder="Password"
-                    pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
                     required
                   />
                   <label for="passwordInput" class="px-5"
-                    >例如：Aa12345678</label
+                    >例如：aa12345678</label
                   >
                 </div>
                 <!-- 記住帳號＋忘記密碼 -->
