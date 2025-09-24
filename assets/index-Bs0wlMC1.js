@@ -1,1 +1,0 @@
-import"./main-DtmQ0nBH.js";new Swiper(".swiper",{slidesPerView:"auto",loop:!0,initialSlide:3,centeredSlides:!0,spaceBetween:12,breakpoints:{992:{spaceBetween:40}},pagination:{el:".swiper-pagination"}});
