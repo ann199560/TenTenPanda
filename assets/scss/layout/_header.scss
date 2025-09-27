@@ -46,8 +46,15 @@
 }
 
 // 按鈕切換
-.btn-outline-primary-80:active,
-.btn-outline-primary-80:hover {
+.headerCart.btn-outline-primary-80:active,
+.headerCart.btn-outline-primary-80:hover {
+  color: #ffffff !important;
+  background-color: #e89018 !important;
+  border-color: #e89018 !important;
+}
+
+.headerLogin.btn-outline-primary-80:active,
+.headerLogin.btn-outline-primary-80:hover {
   color: #ffffff !important;
   background-color: #e89018 !important;
   border-color: #e89018 !important;
@@ -85,11 +92,11 @@
 .btn-none {
   background: none;
   border: none;
-  padding: 0;  
+  padding: 0;
   cursor: pointer;
-  display: flex; 
+  display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .btn-icon:focus {
@@ -112,13 +119,13 @@
 }
 
 // ICON 狀態
-.headerBtn .bg-primary-20:hover,
-.headerBtn .bg-primary-20:active {
+.headerBtn.bg-primary-20:hover,
+.headerBtn.bg-primary-20:active {
   background-color: $primary-40 !important;
 }
 
-.headerBtn .bg-primary-20:hover svg,
-.headerBtn .bg-primary-20:active svg{
+.headerBtn.bg-primary-20:hover svg,
+.headerBtn.bg-primary-20:active svg {
   color: $neutral-white !important;
 }
 

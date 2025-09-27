@@ -13,11 +13,11 @@
 .btn-none {
   background: none;
   border: none;
-  padding: 0;  
+  padding: 0;
   cursor: pointer;
-  display: flex; 
+  display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .btn-icon:focus {
@@ -62,18 +62,18 @@
 }
 
 // ICON 狀態
-.bg-primary-20:hover,
-.bg-primary-20:active {
+.headerBtn.bg-primary-20:hover,
+.headerBtn.bg-primary-20:active {
   background-color: $primary-40 !important;
 }
 
-.bg-primary-20:hover svg,
-.bg-primary-20:active svg{
+.headerBtn.bg-primary-20:hover svg,
+.headerBtn.bg-primary-20:active svg {
   color: $neutral-white !important;
 }
 
-.bg-primary-20:hover span,
-.bg-primary-20:active span{
+.headerBtn.bg-primary-20:hover span,
+.headerBtn.bg-primary-20:active span {
   color: $neutral-white !important;
 }
 
