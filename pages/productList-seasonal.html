@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <title>商品列表 - 經典口味｜甜甜熊貓 TenTen Donut</title>
+    <title>商品列表 - 季節限定｜甜甜熊貓 TenTen Donut</title>
   </head>
   <body>
     <div id="userHeader" style="visibility: hidden">
@@ -49,7 +49,7 @@
               >keyboard_double_arrow_right</span
             >
             <li class="breadcrumb-item d-flex align-items-center ms-5">
-              <a href="./productList-classic.html">經典口味</a>
+              <a href="./productList-seasonal.html">季節限定</a>
             </li>
           </ol>
         </nav>
@@ -62,14 +62,14 @@
               <li class="mb-lg-12">
                 <a
                   href="./productList-classic.html"
-                  class="text-primary-60 fs-4"
+                  class="text-neutral-90 fs-4"
                   >經典口味</a
                 >
               </li>
               <li class="mb-lg-12">
                 <a
                   href="./productList-seasonal.html"
-                  class="text-neutral-90 fs-4"
+                  class="text-primary-60 fs-4"
                   >季節限定</a
                 >
               </li>
@@ -85,15 +85,58 @@
           <div class="col-12 col-lg-9">
             <div class="row">
               <div class="col-12 col-lg-6 ps-lg-8 pe-lg-0 mb-8">
-                <div class="mb-lg-8 product" data-id="classic">
+                <div class="mb-lg-8 product" data-id="starberry">
                   <a
-                    href="./item_details-classic.html"
+                    href="./item_details-starberry.html"
                     class="position-relative d-inline-block"
                   >
-                    <div class="img-box">
+                    <div class="img-box p-18">
                       <img
-                        src="../assets/images/經典甜甜.png"
-                        alt="經典甜甜"
+                        src="../assets/images/星塵草莓（光暈）.png"
+                        alt="星塵草莓"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <!-- 加入收藏 -->
+                    <button
+                      type="button"
+                      class="favorite-btn position-absolute top-0 end-0 fs-3 fs-lg-1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#favoriteModal"
+                    >
+                      <i class="bi bi-heart empty"></i>
+                      <i class="bi bi-heart-fill full"></i>
+                    </button>
+                  </a>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h2 class="fs-6 mb-2">星塵草莓</h2>
+                      <p class="fs-6">$ 90</p>
+                    </div>
+                    <!-- 加入購物車 -->
+                    <button
+                      type="button"
+                      class="producList-cart-btn br-999"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cartModal"
+                    >
+                      <i class="bi bi-cart2 fs-3 fs-lg-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 ps-lg-8 pe-lg-0 mb-8">
+                <div class="mb-lg-8 product" data-id="snowberry">
+                  <a
+                    href="./item_details-snowberry.html"
+                    class="position-relative d-inline-block"
+                  >
+                    <div class="img-box p-18">
+                      <img
+                        src="../assets/images/白雪綿霜莓（光暈）.png"
+                        alt="白雪綿霜莓"
                         class="img-fluid"
                       />
                     </div>
@@ -113,8 +156,8 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h2 class="fs-6 mb-2">經典甜甜</h2>
-                      <p class="fs-6">$ 65</p>
+                      <h2 class="fs-6 mb-2">白雪綿霜莓</h2>
+                      <p class="fs-6">$ 90</p>
                     </div>
                     <!-- 加入購物車 -->
                     <button
@@ -129,15 +172,15 @@
                 </div>
               </div>
               <div class="col-12 col-lg-6 ps-lg-8 pe-lg-0 mb-8">
-                <div class="mb-lg-8 product" data-id="berry">
+                <div class="mb-lg-8 product" data-id="berrycoco">
                   <a
-                    href="./item_details-berry.html"
+                    href="./item_details-berrycoco.html"
                     class="position-relative d-inline-block"
                   >
-                    <div class="img-box">
+                    <div class="img-box p-18">
                       <img
-                        src="../assets/images/莓果甜甜.png"
-                        alt="莓果甜甜"
+                        src="../assets/images/莓果可可（光暈）.png"
+                        alt="莓果可可"
                         class="img-fluid"
                       />
                     </div>
@@ -147,6 +190,7 @@
                       class="favorite-btn position-absolute top-0 end-0 fs-3 fs-lg-1"
                       data-bs-toggle="modal"
                       data-bs-target="#favoriteModal"
+                      onclick="event.preventDefault(); event.stopPropagation();"
                     >
                       <i class="bi bi-heart empty"></i>
                       <i class="bi bi-heart-fill full"></i>
@@ -156,8 +200,8 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h2 class="fs-6 mb-2">莓果甜甜</h2>
-                      <p class="fs-6">$ 65</p>
+                      <h2 class="fs-6 mb-2">莓果可可</h2>
+                      <p class="fs-6">$ 90</p>
                     </div>
                     <!-- 加入購物車 -->
                     <button
@@ -172,15 +216,15 @@
                 </div>
               </div>
               <div class="col-12 col-lg-6 ps-lg-8 pe-lg-0 mb-8">
-                <div class="mb-lg-8 product" data-id="sesame">
+                <div class="mb-lg-8 product" data-id="SnowberryMont">
                   <a
-                    href="./item_details-sesame.html"
+                    href="./item_details-SnowberryMont.html"
                     class="position-relative d-inline-block"
                   >
-                    <div class="img-box">
+                    <div class="img-box p-18">
                       <img
-                        src="../assets/images/芝麻甜甜.png"
-                        alt="芝麻甜甜"
+                        src="../assets/images/雪莓蒙布朗（光暈）.png"
+                        alt="雪莓蒙布朗"
                         class="img-fluid"
                       />
                     </div>
@@ -190,6 +234,7 @@
                       class="favorite-btn position-absolute top-0 end-0 fs-3 fs-lg-1"
                       data-bs-toggle="modal"
                       data-bs-target="#favoriteModal"
+                      onclick="event.preventDefault(); event.stopPropagation();"
                     >
                       <i class="bi bi-heart empty"></i>
                       <i class="bi bi-heart-fill full"></i>
@@ -199,8 +244,8 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h2 class="fs-6 mb-2">芝麻甜甜</h2>
-                      <p class="fs-6">$ 65</p>
+                      <h2 class="fs-6 mb-2">雪莓蒙布朗</h2>
+                      <p class="fs-6">$ 90</p>
                     </div>
                     <!-- 加入購物車 -->
                     <button
@@ -215,15 +260,15 @@
                 </div>
               </div>
               <div class="col-12 col-lg-6 ps-lg-8 pe-lg-0 mb-8">
-                <div class="mb-lg-8 product" data-id="matcha">
+                <div class="mb-lg-8 product" data-id="wineberry">
                   <a
-                    href="./item_details-matcha.html"
+                    href="./item_details-wineberry.html"
                     class="position-relative d-inline-block"
                   >
-                    <div class="img-box">
+                    <div class="img-box p-18">
                       <img
-                        src="../assets/images/抹茶甜甜.png"
-                        alt="抹茶甜甜"
+                        src="../assets/images/熱紅酒莓果（光暈）.png"
+                        alt="熱紅酒莓果"
                         class="img-fluid"
                       />
                     </div>
@@ -233,6 +278,7 @@
                       class="favorite-btn position-absolute top-0 end-0 fs-3 fs-lg-1"
                       data-bs-toggle="modal"
                       data-bs-target="#favoriteModal"
+                      onclick="event.preventDefault(); event.stopPropagation();"
                     >
                       <i class="bi bi-heart empty"></i>
                       <i class="bi bi-heart-fill full"></i>
@@ -242,8 +288,8 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h2 class="fs-6 mb-2">抹茶甜甜</h2>
-                      <p class="fs-6">$ 65</p>
+                      <h2 class="fs-6 mb-2">熱紅酒莓果</h2>
+                      <p class="fs-6">$ 90</p>
                     </div>
                     <!-- 加入購物車 -->
                     <button
@@ -258,15 +304,15 @@
                 </div>
               </div>
               <div class="col-12 col-lg-6 ps-lg-8 pe-lg-0 mb-8">
-                <div class="mb-lg-8 product" data-id="creamlemon">
+                <div class="mb-lg-8 product" data-id="frostBerry">
                   <a
-                    href="./item_details-creamlemon.html"
+                    href="./item_details-frostBerry.html"
                     class="position-relative d-inline-block"
                   >
-                    <div class="img-box">
+                    <div class="img-box p-18">
                       <img
-                        src="../assets/images/生乳檸檬甜甜.png"
-                        alt="生乳檸檬甜甜"
+                        src="../assets/images/莓果夾心（光暈）.png"
+                        alt="莓果夾心"
                         class="img-fluid"
                       />
                     </div>
@@ -276,6 +322,7 @@
                       class="favorite-btn position-absolute top-0 end-0 fs-3 fs-lg-1"
                       data-bs-toggle="modal"
                       data-bs-target="#favoriteModal"
+                      onclick="event.preventDefault(); event.stopPropagation();"
                     >
                       <i class="bi bi-heart empty"></i>
                       <i class="bi bi-heart-fill full"></i>
@@ -285,51 +332,8 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div>
-                      <h2 class="fs-6 mb-2">生乳檸檬甜甜</h2>
-                      <p class="fs-6">$ 65</p>
-                    </div>
-                    <!-- 加入購物車 -->
-                    <button
-                      type="button"
-                      class="producList-cart-btn br-999"
-                      data-bs-toggle="modal"
-                      data-bs-target="#cartModal"
-                    >
-                      <i class="bi bi-cart2 fs-3 fs-lg-2"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 ps-lg-8 pe-lg-0 mb-8">
-                <div class="mb-lg-8 product" data-id="caramelcocoa">
-                  <a
-                    href="./item_details-caramelcocoa.html"
-                    class="position-relative d-inline-block"
-                  >
-                    <div class="img-box">
-                      <img
-                        src="../assets/images/焦糖可可甜甜.png"
-                        alt="焦糖可可甜甜"
-                        class="img-fluid"
-                      />
-                    </div>
-                    <!-- 加入收藏 -->
-                    <button
-                      type="button"
-                      class="favorite-btn position-absolute top-0 end-0 fs-3 fs-lg-1"
-                      data-bs-toggle="modal"
-                      data-bs-target="#favoriteModal"
-                    >
-                      <i class="bi bi-heart empty"></i>
-                      <i class="bi bi-heart-fill full"></i>
-                    </button>
-                  </a>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <h2 class="fs-6 mb-2">焦糖可可甜甜</h2>
-                      <p class="fs-6">$ 65</p>
+                      <h2 class="fs-6 mb-2">莓果夾心</h2>
+                      <p class="fs-6">$ 80</p>
                     </div>
                     <!-- 加入購物車 -->
                     <button

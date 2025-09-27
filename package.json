@@ -12,7 +12,8 @@
   "devDependencies": {
     "ejs": "^3.1.9",
     "vite": "^6.3.5",
-    "vite-plugin-ejs": "^1.7.0"
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-html": "^3.2.2"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",

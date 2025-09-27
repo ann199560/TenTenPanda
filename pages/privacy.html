@@ -30,28 +30,39 @@
     <title>甜甜熊貓｜TenTen Donut - 甜點專賣</title>
   </head>
   <body>
-    <div id="userHeader">
-      <!-- 已登入 -->
+    <div id="userHeader" style="visibility: hidden">
       <%- include('./layout/header-profile'); -%>
     </div>
-    <div id="guestHeader">
-      <!-- 未登入時顯示 -->
+    <div id="guestHeader" style="visibility: hidden">
       <%- include('./layout/header'); -%>
     </div>
 
-    <main class="login-bg border-top border-bottom border-lg-0 position-relative">
+    <main
+      class="login-bg border-top border-bottom border-lg-0 position-relative"
+    >
       <div class="login container py-lg-14 py-8 px-3 px-lg-0">
         <div class="row d-lg-flex justify-content-center">
           <!-- 麵包屑 -->
           <div class="container mb-4 mb-lg-8">
             <nav>
               <ol class="breadcrumb">
-                <li class="bread-item"><a href="index.html"><img src="../assets/images/icon-home.svg" alt=""></a></li>
+                <li class="bread-item">
+                  <a href="index.html"
+                    ><img src="../assets/images/icon-home.svg" alt=""
+                  /></a>
+                </li>
                 <li class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-neutral-60 mx-2">keyboard_double_arrow_right</span>
+                  <span class="material-symbols-outlined text-neutral-60 mx-2"
+                    >keyboard_double_arrow_right</span
+                  >
                   <a href="#"></a>
                 </li>
-                <li class="bread-item text-neutral-80 fw-bold active" aria-current="page">隱私權政策</li>
+                <li
+                  class="bread-item text-neutral-80 fw-bold active"
+                  aria-current="page"
+                >
+                  隱私權政策
+                </li>
               </ol>
             </nav>
           </div>
@@ -59,7 +70,7 @@
           <div class="w-100 mb-8 mb-lg-6">
             <!-- 歡迎詞 -->
             <h4 class="fs-2 fw-bold mb-lg-10 text-neutral-100 mb-6 text-center">
-                隱私權政策
+              隱私權政策
             </h4>
             <!-- 第一項 -->
             <div class="mb-lg-10 mb-8">
@@ -85,7 +96,9 @@
                   本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。
                 </li>
                 <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">
-                  於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的 IP 位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，決不對外公佈。
+                  於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的
+                  IP
+                  位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，決不對外公佈。
                 </li>
                 <li class="fs-lg-9 fs-7 text-neutral-100 lh-base mb-2">
                   為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。
@@ -94,7 +107,6 @@
                   您可以隨時向我們提出請求，以更正或刪除本網站所蒐集您錯誤或不完整的個人資料。
                 </li>
               </ul>
-              
             </div>
             <!-- 第三項 -->
             <div class="mb-lg-10 mb-8">
@@ -109,7 +121,6 @@
                   如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。
                 </li>
               </ul>
-              
             </div>
             <!-- 第四項 -->
             <div class="mb-lg-10 mb-8">
@@ -132,7 +143,9 @@
                   本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。
                 </li>
               </ul>
-              <p class="fs-lg-9 fs-7 text-neutral-100 lh-base fw-bold mb-2 ps-5">
+              <p
+                class="fs-lg-9 fs-7 text-neutral-100 lh-base fw-bold mb-2 ps-5"
+              >
                 前項但書之情形包括不限於：
               </p>
               <ul class="list-style-circle">
@@ -158,7 +171,6 @@
                   本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。
                 </li>
               </ul>
-              
             </div>
             <!-- 第六項 -->
             <div class="mb-lg-10 mb-8">
@@ -167,7 +179,10 @@
               </h5>
               <ul class="list-style">
                 <li class="fs-lg-9 fs-7 text-neutral-100 lh-base">
-                  為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的 Cookie，若您不願接受 Cookie 的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕 Cookie 的寫入，但可能會導致網站某些功能無法正常執行。
+                  為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的
+                  Cookie，若您不願接受 Cookie
+                  的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕
+                  Cookie 的寫入，但可能會導致網站某些功能無法正常執行。
                 </li>
               </ul>
             </div>
@@ -191,6 +206,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
-
   </body>
 </html>

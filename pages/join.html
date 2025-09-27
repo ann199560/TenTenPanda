@@ -33,12 +33,10 @@
     <title>甜甜熊貓｜TenTen Donut - 甜點專賣</title>
   </head>
   <body>
-    <div id="userHeader">
-      <!-- 已登入 -->
+    <div id="userHeader" style="visibility: hidden">
       <%- include('./layout/header-profile'); -%>
     </div>
-    <div id="guestHeader">
-      <!-- 未登入時顯示 -->
+    <div id="guestHeader" style="visibility: hidden">
       <%- include('./layout/header'); -%>
     </div>
 
@@ -80,8 +78,11 @@
           <form class="col-lg-8 ps-lg-5 px-3" id="joinForm">
             <!-- 內容：白底背景 -->
             <div
-              class="card br-lg-24 border-0 d-flex flex-column justify-content-center align-items-center px-lg-8 py-lg-18 h-100 w-100">
-              <div class="join-title d-flex justify-content-center flex-column mb-6 mb-lg-10">
+              class="card br-lg-24 border-0 d-flex flex-column justify-content-center align-items-center px-lg-8 py-lg-18 h-100 w-100"
+            >
+              <div
+                class="join-title d-flex justify-content-center flex-column mb-6 mb-lg-10"
+              >
                 <h4 class="fs-2 fw-bold mb-2">填寫註冊資料加入</h4>
                 <h4 class="fs-2 fw-bold text-neutral-100">TenTen Panda！</h4>
               </div>
@@ -102,9 +103,7 @@
                       pattern="^[\u4e00-\u9fa5A-Za-z]{2,}$"
                       title="請輸入中文姓名（至少兩個字）"
                     />
-                    <label for="emailInput" class="px-5"
-                      >例如：王小明</label
-                    >
+                    <label for="emailInput" class="px-5">例如：王小明</label>
                   </div>
                 </div>
                 <!-- 電話 -->
@@ -128,7 +127,6 @@
                     >
                   </div>
                 </div>
-
               </div>
               <!-- 電子信箱 -->
               <div class="w-100 mb-8 mb-lg-6">
@@ -166,11 +164,13 @@
                   <label for="passwordInput" class="px-5"
                     >半形英數共 8 碼</label
                   >
-                  <span class="text-neutral-60 material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-12 cursor-pointer" id="togglePassword">
+                  <span
+                    class="text-neutral-60 material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-12 cursor-pointer"
+                    id="togglePassword"
+                  >
                     visibility_off
                   </span>
                 </div>
-                
               </div>
               <!-- 確認密碼 -->
               <div class="w-100 mb-8 mb-lg-6">
@@ -189,11 +189,19 @@
                   <label for="passwordReInput" class="px-5"
                     >請再輸入一次密碼</label
                   >
-                  <span class="text-neutral-60 material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-12 cursor-pointer" id="togglePasswordRe">
+                  <span
+                    class="text-neutral-60 material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-12 cursor-pointer"
+                    id="togglePasswordRe"
+                  >
                     visibility_off
                   </span>
                 </div>
-                <p class="fs-lg-9 fs-7 text-danger fs-7 ps-2 d-none" id="passwordError">請輸入相同密碼！</p>
+                <p
+                  class="fs-lg-9 fs-7 text-danger fs-7 ps-2 d-none"
+                  id="passwordError"
+                >
+                  請輸入相同密碼！
+                </p>
               </div>
               <!-- 地址 -->
               <div class="w-100 mb-10">
@@ -213,9 +221,11 @@
                     >例如：忠孝東路四段 123 號 5 樓</label
                   >
                 </div>
-                <p class="text-danger fs-7 ps-2 d-none" id="passwordError">請輸入相同密碼！</p>
+                <p class="text-danger fs-7 ps-2 d-none" id="passwordError">
+                  請輸入相同密碼！
+                </p>
               </div>
-              
+
               <!-- 會員註冊＋隱私權＋登入連結 -->
               <div class="w-100">
                 <!-- 會員註冊 -->
@@ -265,9 +275,19 @@
                 <!-- 同意退換貨政策＋隱私權政策 -->
                 <p class="text-neutral-100 fs-7 mb-10">
                   建立帳號即表示您同意我們的
-                  <a href="return.html" class="fs-lg-9 fs-7 link" target="_blank">退換貨政策</a>
+                  <a
+                    href="return.html"
+                    class="fs-lg-9 fs-7 link"
+                    target="_blank"
+                    >退換貨政策</a
+                  >
                   及
-                  <a href="privacy.html" class="fs-lg-9 fs-7 link" target="_blank">隱私權政策</a>
+                  <a
+                    href="privacy.html"
+                    class="fs-lg-9 fs-7 link"
+                    target="_blank"
+                    >隱私權政策</a
+                  >
                 </p>
                 <p class="fs-lg-9 fs-7 text-neutral-100">
                   已經有 TenTen Panda 帳號了嗎？
@@ -285,6 +305,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
     <script type="module" src="../join.js"></script>
-
   </body>
 </html>
