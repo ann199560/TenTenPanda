@@ -25,15 +25,14 @@
 
 // 購物車按鈕
 .producList-cart-btn {
-  border-radius: 50%;
   background-color: $neutral-white;
-  border-color: $primary-40;
+  border: 2px solid $primary-40;
   color: $primary-40;
   padding: 8px 10px;
 }
 
 .producList-cart-btn:hover {
-  border-color: $neutral-white;  
+  border-color: $neutral-white;
   background-color: $primary-40;
   color: $neutral-white;
 }
@@ -50,4 +49,51 @@
   justify-content: center;
   align-items: center;
   padding: 12px;
+}
+
+// 控制圖片大小
+@media (min-width: 992px) {
+  .img-box {
+    width: 100%;
+    max-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+// 控制商品顯示隱藏
+.lg-invisible {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .lg-invisible {
+    visibility: hidden !important;
+    display: block;
+  }
+}
+
+// 我的收藏
+#favorites-pagination .btn {
+  transition: 0.2s;
+}
+
+#favorites-pagination .btn:hover {
+  background-color: $primary-40;
+  border-color: $primary-40;
+  color: $neutral-white;
+}
+
+#favorites-pagination .btn.active {
+  background-color: $neutral-white;
+  color: $primary-60;
+  border-color: $neutral-white;
 }

@@ -24,280 +24,643 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />    
+    />
     <title>甜甜熊貓｜TenTen Donut - 最新消息</title>
   </head>
   <body>
-    <div id="userHeader">
+    <div id="userHeader" style="visibility: hidden">
       <%- include('./layout/header-profile'); -%>
     </div>
-    <div id="guestHeader">
+    <div id="guestHeader" style="visibility: hidden">
       <%- include('./layout/header'); -%>
     </div>
 
-
     <main class="news-bg position-relative">
       <section class="py-lg-12 py-8 container">
-        <div class="d-flex flex-column gap-2 align-items-center align-items-lg-start position-relative mb-6 mb-lg-12">
+        <div
+          class="d-flex flex-column gap-2 align-items-center align-items-lg-start position-relative mb-6 mb-lg-12"
+        >
           <h1 class="fs-2 fw-bold text-neutral-100">最新消息</h1>
-          <h2 class="text-neutral-60 lh-base fs-lg-9 fs-7" style="letter-spacing: 0.04rem;">甜甜報你知，第一手掌握最新資訊與優惠!</h2>
-          <img src="../assets/images/news/news-bright.svg" alt="" class="img-fluid position-absolute top-0 news-deco-img-bright">
-        </div>        
+          <h2
+            class="text-neutral-60 lh-base fs-lg-9 fs-7"
+            style="letter-spacing: 0.04rem"
+          >
+            甜甜報你知，第一手掌握最新資訊與優惠!
+          </h2>
+          <img
+            src="../assets/images/news/news-bright.svg"
+            alt=""
+            class="img-fluid position-absolute top-0 news-deco-img-bright"
+          />
+        </div>
         <!-- 手風琴 -->
         <div class="accordion d-flex flex-column gap-lg-6 gap-5 pb-12">
           <!-- 最新消息-1 -->
-          <div class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp animate__faster" id="news-title-1">
+          <div
+            class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp animate__faster"
+            id="news-title-1"
+          >
             <!-- 收合 -->
-            <button class="news-accordion-btn" data-bs-toggle="collapse" data-bs-target="#news-list-1" aria-expanded="false" aria-controls="news-list-1">
+            <button
+              class="news-accordion-btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#news-list-1"
+              aria-expanded="false"
+              aria-controls="news-list-1"
+            >
               <div class="d-flex gap-5 flex-column flex-lg-row">
                 <div class="news-img rounded-4 overflow-hidden flex-shrink-0">
-                  <img src="../assets/images/ad-news-1.png" alt="">
+                  <img src="../assets/images/ad-news-1.png" alt="" />
                 </div>
                 <div class="d-flex flex-column justify-content-between gap-2">
-                  <p class="text-neutral-60 fs-lg-9 fs-7"><time datetime="2025-10-03">2025/10/03</time></p>
-                  <h2 class="fw-bold fs-lg-4 fs-5 news-font-hover">甜甜圈原來要這樣吃！網友激推這種方法！</h2>
+                  <p class="text-neutral-60 fs-lg-9 fs-7">
+                    <time datetime="2025-10-03">2025/10/03</time>
+                  </p>
+                  <h2 class="fw-bold fs-lg-4 fs-5 news-font-hover">
+                    甜甜圈原來要這樣吃！網友激推這種方法！
+                  </h2>
                   <div class="d-flex">
-                    <div class="text-neutral-100 fs-7 lh-base d-flex gap-2 flex-column text-neutral-100 news-preview-height">
-                      <p class="" style="letter-spacing: 0.04rem;">最新話題美食「雪夜莓語」冬季限定系列，不只賣造型，更主打吃法有撇步，讓冬天的甜味瞬間翻倍。</p> 
-                      <p>首先，大推「微波加熱 8 秒」或「烤箱低溫回烤 2～3 分鐘」——讓北海道奶油緩緩融化，草莓果醬微微溫熱，香氣瞬間爆發！接著，不少老饕分享，搭配黑咖啡或熱紅茶更能凸顯大湖草莓的酸甜，減去甜膩感；也有人選擇用冰牛奶中和熱甜甜圈的溫度，吃起來外熱內涼，層次更豐富。</p>
+                    <div
+                      class="text-neutral-100 fs-7 lh-base d-flex gap-2 flex-column text-neutral-100 news-preview-height"
+                    >
+                      <p class="" style="letter-spacing: 0.04rem">
+                        最新話題美食「雪夜莓語」冬季限定系列，不只賣造型，更主打吃法有撇步，讓冬天的甜味瞬間翻倍。
+                      </p>
+                      <p>
+                        首先，大推「微波加熱 8 秒」或「烤箱低溫回烤 2～3
+                        分鐘」——讓北海道奶油緩緩融化，草莓果醬微微溫熱，香氣瞬間爆發！接著，不少老饕分享，搭配黑咖啡或熱紅茶更能凸顯大湖草莓的酸甜，減去甜膩感；也有人選擇用冰牛奶中和熱甜甜圈的溫度，吃起來外熱內涼，層次更豐富。
+                      </p>
                     </div>
-                    <span class="ms-2 mb-2 align-self-end d-lg-none d-block"><i class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"></i></span>
+                    <span class="ms-2 mb-2 align-self-end d-lg-none d-block"
+                      ><i
+                        class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"
+                      ></i
+                    ></span>
                   </div>
-                  <p class="d-lg-block d-none">...</p>                               
-                </div> 
-                <span class="ms-2 mb-2 align-self-end d-lg-block d-none"><i class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"></i></span>   
+                  <p class="d-lg-block d-none">...</p>
+                </div>
+                <span class="ms-2 mb-2 align-self-end d-lg-block d-none"
+                  ><i
+                    class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"
+                  ></i
+                ></span>
               </div>
             </button>
             <!-- 展開 -->
             <div id="news-list-1" class="accordion-collapse collapse">
               <div class="accordion-body px-lg-10 py-lg-10 p-2">
                 <div class="news-img-open rounded-4 overflow-hidden">
-                  <img src="../assets/images/ad-news-1.png" alt="" class="img-fluid">
+                  <img
+                    src="../assets/images/ad-news-1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="d-flex flex-column mt-lg-8 mt-5">
-                  <div class="d-flex justify-content-lg-between align-items-lg-start flex-lg-row-reverse flex-column gap-2">
-                    <p class="text-neutral-60 fs-lg-9 fs-7"><time datetime="2025-10-03">2025/10/03</time></p>
-                    <h2 class="text-neutral-100 fw-bold fs-lg-3 fs-5">甜甜圈原來要這樣吃！網友激推這種方法！ 🤩</h2>
+                  <div
+                    class="d-flex justify-content-lg-between align-items-lg-start flex-lg-row-reverse flex-column gap-2"
+                  >
+                    <p class="text-neutral-60 fs-lg-9 fs-7">
+                      <time datetime="2025-10-03">2025/10/03</time>
+                    </p>
+                    <h2 class="text-neutral-100 fw-bold fs-lg-3 fs-5">
+                      甜甜圈原來要這樣吃！網友激推這種方法！ 🤩
+                    </h2>
                   </div>
-                  <div class="d-flex gap-lg-12 justify-content-lg-between flex-lg-row flex-column justify-content-start">
+                  <div
+                    class="d-flex gap-lg-12 justify-content-lg-between flex-lg-row flex-column justify-content-start"
+                  >
                     <div class="d-flex gap-5 flex-column mt-5 fs-9 lh-base">
-                      <p><span class="fw-bold">\ 冬天就是要吃甜甜圈 / </span>跟著這三招，甜味瞬間翻倍，幸福感滿分✨</p>
-                      <p>最新話題美食「雪夜莓語」冬季限定系列，不只賣造型，更主打吃法有撇步，讓冬天的甜味瞬間翻倍😋<br>TENTEN小當家一致認證：「加熱、搭飲品、控制溫度」三招學起來，草莓甜甜圈才真香<br>現在就公開美味的秘密！</p>
+                      <p>
+                        <span class="fw-bold">\ 冬天就是要吃甜甜圈 / </span
+                        >跟著這三招，甜味瞬間翻倍，幸福感滿分✨
+                      </p>
+                      <p>
+                        最新話題美食「雪夜莓語」冬季限定系列，不只賣造型，更主打吃法有撇步，讓冬天的甜味瞬間翻倍😋<br />TENTEN小當家一致認證：「加熱、搭飲品、控制溫度」三招學起來，草莓甜甜圈才真香<br />現在就公開美味的秘密！
+                      </p>
                       <ul>
-                        <li>秘訣1：<span class="fw-bold">微波 8 秒 🔥</span> - 快速加熱，奶油慢慢融化，草莓果醬微微溫熱，香氣撲鼻</li>
-                        <li>秘訣2：<span class="fw-bold">烤箱低溫回烤 2～3 分鐘 🍰</span> - 外層微酥、內餡柔軟，口感層次更分明</li>
-                        <li>秘訣3：<span class="fw-bold">搭配熱飲或牛奶 ☕️🥛</span> - 熱紅茶、黑咖啡或冰牛奶都能平衡甜度，吃起來外熱內涼，層次更豐富</li>
-                      </ul>                                          
-                      <p>秘訣MAX：<span class="fw-bold">「微波加熱 8 秒」或「烤箱低溫回烤 2～3 分鐘」</span>——讓北海道奶油緩緩融化，草莓果醬微微溫熱，香氣瞬間爆發！<br>搭配黑咖啡或熱紅茶更能凸顯大湖草莓的酸甜，減去甜膩感<br>選擇用冰牛奶中和熱甜甜圈的溫度，吃起來外熱內涼，層次更豐富</p>
+                        <li>
+                          秘訣1：<span class="fw-bold">微波 8 秒 🔥</span> -
+                          快速加熱，奶油慢慢融化，草莓果醬微微溫熱，香氣撲鼻
+                        </li>
+                        <li>
+                          秘訣2：<span class="fw-bold"
+                            >烤箱低溫回烤 2～3 分鐘 🍰</span
+                          >
+                          - 外層微酥、內餡柔軟，口感層次更分明
+                        </li>
+                        <li>
+                          秘訣3：<span class="fw-bold"
+                            >搭配熱飲或牛奶 ☕️🥛</span
+                          >
+                          -
+                          熱紅茶、黑咖啡或冰牛奶都能平衡甜度，吃起來外熱內涼，層次更豐富
+                        </li>
+                      </ul>
+                      <p>
+                        秘訣MAX：<span class="fw-bold"
+                          >「微波加熱 8 秒」或「烤箱低溫回烤 2～3 分鐘」</span
+                        >——讓北海道奶油緩緩融化，草莓果醬微微溫熱，香氣瞬間爆發！<br />搭配黑咖啡或熱紅茶更能凸顯大湖草莓的酸甜，減去甜膩感<br />選擇用冰牛奶中和熱甜甜圈的溫度，吃起來外熱內涼，層次更豐富
+                      </p>
                       <ul>
-                        <li><span class="fw-bold">冬日限定｜TENTEN 熱銷TOP.3</span></li>
-                        <li><span class="fw-bold">🥇 雪莓蒙布朗</span>：口感綿密濃郁，回烤後更能嚐到栗香與果香的融合。</li>
-                        <li><span class="fw-bold">🥈 熱紅酒莓果</span>：濃郁果香與熱紅酒香氣交織，冬天必吃經典款。</li>
-                        <li><span class="fw-bold">🥉 冰霜莓果夾心 ❄️</span>：建議冷藏後直接享用，外層糖霜酥脆、內餡清爽，冰涼口感超療癒 💖</li>
-                      </ul> 
+                        <li>
+                          <span class="fw-bold"
+                            >冬日限定｜TENTEN 熱銷TOP.3</span
+                          >
+                        </li>
+                        <li>
+                          <span class="fw-bold">🥇 雪莓蒙布朗</span
+                          >：口感綿密濃郁，回烤後更能嚐到栗香與果香的融合。
+                        </li>
+                        <li>
+                          <span class="fw-bold">🥈 熱紅酒莓果</span
+                          >：濃郁果香與熱紅酒香氣交織，冬天必吃經典款。
+                        </li>
+                        <li>
+                          <span class="fw-bold">🥉 冰霜莓果夾心 ❄️</span
+                          >：建議冷藏後直接享用，外層糖霜酥脆、內餡清爽，冰涼口感超療癒
+                          💖
+                        </li>
+                      </ul>
                       <div class="d-flex justify-content-between">
-                        <p>冬夜裡，一口甜甜圈、一口熱飲，<br class="d-block d-lg-none">是最幸福的小確幸<br><a href="productList-seasonal.html" class="fw-bold rounded-pill news-link-font-hover" target="_blank">前往季節限定商品 >></a></p>                        
-                        <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-1" aria-expanded="true" aria-controls="news-title-1">
-                          <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
-                        </button>                        
-                      </div>                     
+                        <p>
+                          冬夜裡，一口甜甜圈、一口熱飲，<br
+                            class="d-block d-lg-none"
+                          />是最幸福的小確幸<br /><a
+                            href="productList-seasonal.html"
+                            class="fw-bold rounded-pill news-link-font-hover"
+                            target="_blank"
+                            >前往季節限定商品 >></a
+                          >
+                        </p>
+                        <button
+                          class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#news-list-1"
+                          aria-expanded="true"
+                          aria-controls="news-title-1"
+                        >
+                          <i
+                            class="bi bi-caret-up-fill d-block"
+                            style="transform: translateY(-2px)"
+                          ></i>
+                        </button>
+                      </div>
                     </div>
-                    <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-block d-none mb-3" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-1" aria-expanded="true" aria-controls="news-title-1">
-                      <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
-                    </button>                  
+                    <button
+                      class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-block d-none mb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#news-list-1"
+                      aria-expanded="true"
+                      aria-controls="news-title-1"
+                    >
+                      <i
+                        class="bi bi-caret-up-fill d-block"
+                        style="transform: translateY(-2px)"
+                      ></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- 最新消息-2 -->
-          <div class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp animate__fast" id="news-title-2">
+          <div
+            class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp animate__fast"
+            id="news-title-2"
+          >
             <!-- 收合 -->
-            <button class="news-accordion-btn" data-bs-toggle="collapse" data-bs-target="#news-list-2" aria-expanded="false" aria-controls="news-list-2">
+            <button
+              class="news-accordion-btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#news-list-2"
+              aria-expanded="false"
+              aria-controls="news-list-2"
+            >
               <div class="d-flex gap-5 flex-column flex-lg-row">
                 <div class="news-img rounded-4 overflow-hidden flex-shrink-0">
-                  <img src="../assets/images/ad-news-2.jpg" alt="">
+                  <img src="../assets/images/ad-news-2.jpg" alt="" />
                 </div>
                 <div class="d-flex flex-column justify-content-between gap-2">
-                  <p class="text-neutral-60 fs-lg-9 fs-7"><time datetime="2025-10-01">2025/10/01</time></p>
-                  <h2 class="fw-bold fs-lg-4 fs-5 news-font-hover">冬季限定の北海道奶油Ｘ大湖草莓 \ 溫暖上市！ /🍓</h2>
+                  <p class="text-neutral-60 fs-lg-9 fs-7">
+                    <time datetime="2025-10-01">2025/10/01</time>
+                  </p>
+                  <h2 class="fw-bold fs-lg-4 fs-5 news-font-hover">
+                    冬季限定の北海道奶油Ｘ大湖草莓 \ 溫暖上市！ /🍓
+                  </h2>
                   <div class="d-flex">
-                    <div class="text-neutral-100 fs-7 lh-base d-flex gap-2 flex-column text-neutral-100 news-preview-height">
-                      <p style="letter-spacing: 0.04rem;">草莓的季節又來囉！冷冷的天有甜甜熊貓帶給您味蕾的甜蜜驚喜！</p> 
-                      <p style="letter-spacing: 0.04rem;">本季活動從 2025/10/11至2026/01/11，我們以「雪夜莓語」為主題，嚴選台灣大湖新鮮草莓搭配北海道奶油，打造 6 款冬季限定草莓甜甜圈，陪大家一起度過最冷卻最暖心的季節。</p>
+                    <div
+                      class="text-neutral-100 fs-7 lh-base d-flex gap-2 flex-column text-neutral-100 news-preview-height"
+                    >
+                      <p style="letter-spacing: 0.04rem">
+                        草莓的季節又來囉！冷冷的天有甜甜熊貓帶給您味蕾的甜蜜驚喜！
+                      </p>
+                      <p style="letter-spacing: 0.04rem">
+                        本季活動從
+                        2025/10/11至2026/01/11，我們以「雪夜莓語」為主題，嚴選台灣大湖新鮮草莓搭配北海道奶油，打造
+                        6
+                        款冬季限定草莓甜甜圈，陪大家一起度過最冷卻最暖心的季節。
+                      </p>
                     </div>
-                    <span class="ms-2 mb-2 align-self-end d-lg-none d-block"><i class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"></i></span>
+                    <span class="ms-2 mb-2 align-self-end d-lg-none d-block"
+                      ><i
+                        class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"
+                      ></i
+                    ></span>
                   </div>
-                  <p class="d-lg-block d-none">...</p>                               
-                </div> 
-                <span class="ms-2 mb-2 align-self-end d-lg-block d-none"><i class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"></i></span>   
+                  <p class="d-lg-block d-none">...</p>
+                </div>
+                <span class="ms-2 mb-2 align-self-end d-lg-block d-none"
+                  ><i
+                    class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"
+                  ></i
+                ></span>
               </div>
             </button>
             <!-- 展開 -->
             <div id="news-list-2" class="accordion-collapse collapse">
               <div class="accordion-body px-lg-10 py-lg-10 p-2">
                 <div class="news-img-open rounded-4 overflow-hidden">
-                  <img src="../assets/images/ad-news-2.jpg" alt="" class="img-fluid">
+                  <img
+                    src="../assets/images/ad-news-2.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="d-flex flex-column mt-lg-8 mt-5">
-                  <div class="d-flex justify-content-lg-between align-items-lg-start flex-lg-row-reverse flex-column gap-2">
-                    <p class="text-neutral-60 fs-lg-9 fs-7"><time datetime="2025-10-01">2025/10/01</time></p>
-                    <h2 class="text-neutral-100 fw-bold fs-lg-3 fs-5">冬季限定の北海道奶油Ｘ大湖草莓 \ 溫暖上市！ / 🍓</h2>
+                  <div
+                    class="d-flex justify-content-lg-between align-items-lg-start flex-lg-row-reverse flex-column gap-2"
+                  >
+                    <p class="text-neutral-60 fs-lg-9 fs-7">
+                      <time datetime="2025-10-01">2025/10/01</time>
+                    </p>
+                    <h2 class="text-neutral-100 fw-bold fs-lg-3 fs-5">
+                      冬季限定の北海道奶油Ｘ大湖草莓 \ 溫暖上市！ / 🍓
+                    </h2>
                   </div>
-                  <div class="d-flex gap-lg-12 justify-content-lg-between flex-lg-row flex-column justify-content-start">
+                  <div
+                    class="d-flex gap-lg-12 justify-content-lg-between flex-lg-row flex-column justify-content-start"
+                  >
                     <div class="d-flex gap-5 flex-column mt-5 fs-9 lh-base">
-                      <p>草莓的季節又來囉！冷冷的天有甜甜熊貓帶給您味蕾的甜蜜驚喜！</p>
-                      <p><span class="fw-bold">期間限定 : 2025/10/11 - 2026/01/11 </span><br>嚴選台灣大湖新鮮草莓搭配北海道奶油，打造 6 款冬季限定草莓甜甜圈<br>陪大家一起度過最冷卻最暖心的季節💕</p>
-                      
+                      <p>
+                        草莓的季節又來囉！冷冷的天有甜甜熊貓帶給您味蕾的甜蜜驚喜！
+                      </p>
+                      <p>
+                        <span class="fw-bold"
+                          >期間限定 : 2025/10/11 - 2026/01/11 </span
+                        ><br />嚴選台灣大湖新鮮草莓搭配北海道奶油，打造 6
+                        款冬季限定草莓甜甜圈<br />陪大家一起度過最冷卻最暖心的季節💕
+                      </p>
+
                       <ul>
-                        <li><span class="fw-bold">✨冬季星塵草莓</span>：粉嫩草莓糖霜配上閃閃銀白糖珠，好像冬夜裡的星光，酸甜不膩</li>
-                        <li><span class="fw-bold">✨白雪綿霜莓</span>：鬆軟圈體淋上北海道奶油霜，撒上雪白糖粉，一口咬下奶香滿滿又吃得到草莓香氣</li>
-                        <li><span class="fw-bold">✨暖心莓果可可</span>：濃郁可可醬結合微酸草莓，再灑些微融棉花糖，就像冬夜裡的一杯熱可可，暖胃又暖心</li>
-                        <li><span class="fw-bold">✨雪莓蒙布朗</span>：栗子奶油搭配草莓奶油做成蒙布朗造型，外表夢幻、內餡酸甜滑順，每一口都很有層次</li>
-                        <li><span class="fw-bold">✨熱紅酒莓果</span>：靈感來自冬季熱紅酒，融合肉桂與果乾的香氣，加上大湖草莓果香，微微辛香暖身剛剛好</li>
-                        <li><span class="fw-bold">✨冰霜莓果夾心</span>：外層薄薄糖霜加上草莓碎果粒，裡面是滿滿草莓果醬，綿軟柔和，口感很有驚喜感</li>
+                        <li>
+                          <span class="fw-bold">✨冬季星塵草莓</span
+                          >：粉嫩草莓糖霜配上閃閃銀白糖珠，好像冬夜裡的星光，酸甜不膩
+                        </li>
+                        <li>
+                          <span class="fw-bold">✨白雪綿霜莓</span
+                          >：鬆軟圈體淋上北海道奶油霜，撒上雪白糖粉，一口咬下奶香滿滿又吃得到草莓香氣
+                        </li>
+                        <li>
+                          <span class="fw-bold">✨暖心莓果可可</span
+                          >：濃郁可可醬結合微酸草莓，再灑些微融棉花糖，就像冬夜裡的一杯熱可可，暖胃又暖心
+                        </li>
+                        <li>
+                          <span class="fw-bold">✨雪莓蒙布朗</span
+                          >：栗子奶油搭配草莓奶油做成蒙布朗造型，外表夢幻、內餡酸甜滑順，每一口都很有層次
+                        </li>
+                        <li>
+                          <span class="fw-bold">✨熱紅酒莓果</span
+                          >：靈感來自冬季熱紅酒，融合肉桂與果乾的香氣，加上大湖草莓果香，微微辛香暖身剛剛好
+                        </li>
+                        <li>
+                          <span class="fw-bold">✨冰霜莓果夾心</span
+                          >：外層薄薄糖霜加上草莓碎果粒，裡面是滿滿草莓果醬，綿軟柔和，口感很有驚喜感
+                        </li>
                       </ul>
-                      
-                      <p>🍓只在這個冬天限定上市，售完為止！用酸甜草莓和香濃奶油，替寒冷冬夜留下一段溫暖的味覺記憶</p>
+
+                      <p>
+                        🍓只在這個冬天限定上市，售完為止！用酸甜草莓和香濃奶油，替寒冷冬夜留下一段溫暖的味覺記憶
+                      </p>
 
                       <div class="d-flex justify-content-between">
-                        <p>快來店裡嚐嚐這 6 款只屬於冬天的甜蜜滋味吧！<br><a href="productList-seasonal.html" class="fw-bold rounded-pill news-link-font-hover news-link" target="_blank">前往季節限定商品 >></a></p>                        
-                        <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-2" aria-expanded="true" aria-controls="news-title-2">
-                          <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
-                        </button>                        
-                      </div>                     
+                        <p>
+                          快來店裡嚐嚐這 6 款只屬於冬天的甜蜜滋味吧！<br /><a
+                            href="productList-seasonal.html"
+                            class="fw-bold rounded-pill news-link-font-hover news-link"
+                            target="_blank"
+                            >前往季節限定商品 >></a
+                          >
+                        </p>
+                        <button
+                          class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#news-list-2"
+                          aria-expanded="true"
+                          aria-controls="news-title-2"
+                        >
+                          <i
+                            class="bi bi-caret-up-fill d-block"
+                            style="transform: translateY(-2px)"
+                          ></i>
+                        </button>
+                      </div>
                     </div>
-                    <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-block d-none mb-3" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-2" aria-expanded="true" aria-controls="news-title-2">
-                      <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
-                    </button>                  
+                    <button
+                      class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-block d-none mb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#news-list-2"
+                      aria-expanded="true"
+                      aria-controls="news-title-2"
+                    >
+                      <i
+                        class="bi bi-caret-up-fill d-block"
+                        style="transform: translateY(-2px)"
+                      ></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- 最新消息-3 -->
-          <div class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp" id="news-title-3">
+          <div
+            class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp"
+            id="news-title-3"
+          >
             <!-- 收合 -->
-            <button class="news-accordion-btn" data-bs-toggle="collapse" data-bs-target="#news-list-3" aria-expanded="false" aria-controls="news-list-3">
+            <button
+              class="news-accordion-btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#news-list-3"
+              aria-expanded="false"
+              aria-controls="news-list-3"
+            >
               <div class="d-flex gap-5 flex-column flex-lg-row w-100">
                 <div class="news-img rounded-4 overflow-hidden flex-shrink-0">
-                  <img src="../assets/images/ad-news-3.png" alt="">
+                  <img src="../assets/images/ad-news-3.png" alt="" />
                 </div>
                 <div class="d-flex flex-column justify-content-between gap-2">
-                  <p class="text-neutral-60 fs-lg-9 fs-7"><time datetime="2025-08-23">2025/08/23</time></p>
-                  <h2 class="fw-bold fs-lg-4 fs-5 news-font-hover">來自法國的焦糖可可甜甜 - 8/23 起全門市熱烈販售</h2>
+                  <p class="text-neutral-60 fs-lg-9 fs-7">
+                    <time datetime="2025-08-23">2025/08/23</time>
+                  </p>
+                  <h2 class="fw-bold fs-lg-4 fs-5 news-font-hover">
+                    來自法國的焦糖可可甜甜 - 8/23 起全門市熱烈販售
+                  </h2>
                   <div class="d-flex">
-                    <div class="text-neutral-100 fs-7 lh-base d-flex gap-2 flex-column text-neutral-100 news-preview-height">
-                      <p style="letter-spacing: 0.04rem;">‼滿額免運優惠中‼ 選用法國進口苦甜可可粉慢火熬煮</p> 
-                      <p style="letter-spacing: 0.04rem;">冬天濃純可可搭配香甜焦糖，表層烘培出微微焦香，甜而不膩、溫柔而濃厚，午後搭配拿鐵享用，讓午後時光更加迷人！<br>來一杯熱牛奶，度過你的溫柔時光吧！</p>
+                    <div
+                      class="text-neutral-100 fs-7 lh-base d-flex gap-2 flex-column text-neutral-100 news-preview-height"
+                    >
+                      <p style="letter-spacing: 0.04rem">
+                        ‼滿額免運優惠中‼ 選用法國進口苦甜可可粉慢火熬煮
+                      </p>
+                      <p style="letter-spacing: 0.04rem">
+                        冬天濃純可可搭配香甜焦糖，表層烘培出微微焦香，甜而不膩、溫柔而濃厚，午後搭配拿鐵享用，讓午後時光更加迷人！<br />來一杯熱牛奶，度過你的溫柔時光吧！
+                      </p>
                     </div>
-                    <span class="ms-2 mb-2 align-self-end d-lg-none d-block"><i class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"></i></span>
+                    <span class="ms-2 mb-2 align-self-end d-lg-none d-block"
+                      ><i
+                        class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"
+                      ></i
+                    ></span>
                   </div>
-                  <p class="d-lg-block d-none">...</p>                               
-                </div> 
-                <span class="ms-auto mb-2 align-self-end d-lg-block d-none"><i class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"></i></span>   
+                  <p class="d-lg-block d-none">...</p>
+                </div>
+                <span class="ms-auto mb-2 align-self-end d-lg-block d-none"
+                  ><i
+                    class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"
+                  ></i
+                ></span>
               </div>
             </button>
             <!-- 展開 -->
             <div id="news-list-3" class="accordion-collapse collapse">
               <div class="accordion-body px-lg-10 py-lg-10 p-2">
                 <div class="news-img-open rounded-4 overflow-hidden">
-                  <img src="../assets/images/ad-news-3.png" alt="" class="img-fluid">
+                  <img
+                    src="../assets/images/ad-news-3.png"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="d-flex flex-column mt-lg-8 mt-5">
-                  <div class="d-flex justify-content-lg-between align-items-lg-start flex-lg-row-reverse flex-column gap-2">
-                    <p class="text-neutral-60 fs-lg-9 fs-7"><time datetime="2025-08-23">2025/08/23</time></p>
-                    <h2 class="text-neutral-100 fw-bold fs-lg-3 fs-5">來自法國的焦糖可可甜甜 - 8/23 起全門市熱烈販售</h2>
+                  <div
+                    class="d-flex justify-content-lg-between align-items-lg-start flex-lg-row-reverse flex-column gap-2"
+                  >
+                    <p class="text-neutral-60 fs-lg-9 fs-7">
+                      <time datetime="2025-08-23">2025/08/23</time>
+                    </p>
+                    <h2 class="text-neutral-100 fw-bold fs-lg-3 fs-5">
+                      來自法國的焦糖可可甜甜 - 8/23 起全門市熱烈販售
+                    </h2>
                   </div>
-                  <div class="d-flex gap-lg-12 justify-content-lg-between flex-lg-row flex-column justify-content-start">
+                  <div
+                    class="d-flex gap-lg-12 justify-content-lg-between flex-lg-row flex-column justify-content-start"
+                  >
                     <div class="d-flex gap-5 flex-column mt-5 fs-9 lh-base">
-                      <p>🎉 08/23起 \全門市熱烈販售/ 🎉 </p>
-                      <p><span class="fw-bold">焦糖可可甜甜🍫療癒新登場</span><br>選用法國進口苦甜可可粉，與慢火熬煮的手工焦糖醬融合製成特製內餡<br>外層以微烘焙可可粒與可可糖粉，搭配高純度可可豆壓模製成可愛外表🐼</p>                    
-                      <p>濃醇可可搭配香甜焦糖，表層烘焙出微微焦香，甜而不膩、溫柔而濃厚💛<br>午後搭配拿鐵☕️享用，讓午後時光更加迷人🥛！</p>
-                      <p>網路商城<span class="fw-bold"> ‼ 滿額免運優惠中‼ </span> <br>數量有限，手刀把握最新出爐的好吃甜甜圈吧！😋<br>※單筆消費限折扣乙次</p>                    
+                      <p>🎉 08/23起 \全門市熱烈販售/ 🎉</p>
+                      <p>
+                        <span class="fw-bold">焦糖可可甜甜🍫療癒新登場</span
+                        ><br />選用法國進口苦甜可可粉，與慢火熬煮的手工焦糖醬融合製成特製內餡<br />外層以微烘焙可可粒與可可糖粉，搭配高純度可可豆壓模製成可愛外表🐼
+                      </p>
+                      <p>
+                        濃醇可可搭配香甜焦糖，表層烘焙出微微焦香，甜而不膩、溫柔而濃厚💛<br />午後搭配拿鐵☕️享用，讓午後時光更加迷人🥛！
+                      </p>
+                      <p>
+                        網路商城<span class="fw-bold"> ‼ 滿額免運優惠中‼ </span>
+                        <br />數量有限，手刀把握最新出爐的好吃甜甜圈吧！😋<br />※單筆消費限折扣乙次
+                      </p>
                       <div class="d-flex justify-content-between">
-                        <a href="item_details-caramelcocoa.html.html" class="fw-bold rounded-pill news-link-font-hover news-link" target="_blank">享用迷人的午後時光 >></a>                        
-                        <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-3" aria-expanded="true" aria-controls="news-title-3">
-                          <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
-                        </button>                        
-                      </div>                     
+                        <a
+                          href="item_details-caramelcocoa.html.html"
+                          class="fw-bold rounded-pill news-link-font-hover news-link"
+                          target="_blank"
+                          >享用迷人的午後時光 >></a
+                        >
+                        <button
+                          class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#news-list-3"
+                          aria-expanded="true"
+                          aria-controls="news-title-3"
+                        >
+                          <i
+                            class="bi bi-caret-up-fill d-block"
+                            style="transform: translateY(-2px)"
+                          ></i>
+                        </button>
+                      </div>
                     </div>
-                    <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-block d-none mb-3" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-3" aria-expanded="true" aria-controls="news-title-3">
-                      <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
-                    </button>                  
+                    <button
+                      class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-block d-none mb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#news-list-3"
+                      aria-expanded="true"
+                      aria-controls="news-title-3"
+                    >
+                      <i
+                        class="bi bi-caret-up-fill d-block"
+                        style="transform: translateY(-2px)"
+                      ></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- 最新消息-4 -->
-          <div class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp" id="news-title-4">
+          <div
+            class="accordion-item shadow rounded-4 border-0 overflow-hidden p-lg-8 p-5 animate__animated animate__slideInUp"
+            id="news-title-4"
+          >
             <!-- 收合 -->
-            <button class="news-accordion-btn" data-bs-toggle="collapse" data-bs-target="#news-list-4" aria-expanded="false" aria-controls="news-list-4">
+            <button
+              class="news-accordion-btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#news-list-4"
+              aria-expanded="false"
+              aria-controls="news-list-4"
+            >
               <div class="d-flex gap-5 flex-column flex-lg-row w-100">
                 <div class="news-img rounded-4 overflow-hidden flex-shrink-0">
-                  <img src="../assets/images/ad-news-4.png" alt="">
+                  <img src="../assets/images/ad-news-4.png" alt="" />
                 </div>
                 <div class="d-flex flex-column justify-content-between gap-2">
-                  <p class="text-neutral-60 fs-lg-9 fs-7"><time datetime="2025-06-20">2025/06/20</time></p>
-                  <h2 class="fw-bold fs-lg-4 fs-5 news-font-hover">#涼爽登場 加購 \生乳檸檬甜甜/ 滿額免運!!</h2>
+                  <p class="text-neutral-60 fs-lg-9 fs-7">
+                    <time datetime="2025-06-20">2025/06/20</time>
+                  </p>
+                  <h2 class="fw-bold fs-lg-4 fs-5 news-font-hover">
+                    #涼爽登場 加購 \生乳檸檬甜甜/ 滿額免運!!
+                  </h2>
                   <div class="d-flex">
-                    <div class="text-neutral-100 fs-7 lh-base d-flex gap-2 flex-column text-neutral-100 news-preview-height">
-                      <p style="letter-spacing: 0.04rem;">生乳檸檬甜甜 6/20 起，全門市清爽登場！</p> 
-                      <p style="letter-spacing: 0.04rem;">選用新鮮檸檬製成果泥，結合滑順法式生乳內餡，酸中帶甜、柔和清新，<br>不僅不膩口，還能讓你在每一口裡，感受到夏天的微風與陽光。</p>
-                      <p class="d-lg-block d-none">推薦冰冰吃更對味，搭配冷萃咖啡或氣泡飲也超級剛好！</p>
+                    <div
+                      class="text-neutral-100 fs-7 lh-base d-flex gap-2 flex-column text-neutral-100 news-preview-height"
+                    >
+                      <p style="letter-spacing: 0.04rem">
+                        生乳檸檬甜甜 6/20 起，全門市清爽登場！
+                      </p>
+                      <p style="letter-spacing: 0.04rem">
+                        選用新鮮檸檬製成果泥，結合滑順法式生乳內餡，酸中帶甜、柔和清新，<br />不僅不膩口，還能讓你在每一口裡，感受到夏天的微風與陽光。
+                      </p>
+                      <p class="d-lg-block d-none">
+                        推薦冰冰吃更對味，搭配冷萃咖啡或氣泡飲也超級剛好！
+                      </p>
                     </div>
-                    <span class="ms-2 mb-2 align-self-end d-lg-none d-block"><i class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"></i></span>
+                    <span class="ms-2 mb-2 align-self-end d-lg-none d-block"
+                      ><i
+                        class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"
+                      ></i
+                    ></span>
                   </div>
-                  <p class="d-lg-block d-none">...</p>                               
-                </div> 
-                <span class="ms-auto mb-2 align-self-end d-lg-block d-none"><i class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"></i></span>   
+                  <p class="d-lg-block d-none">...</p>
+                </div>
+                <span class="ms-auto mb-2 align-self-end d-lg-block d-none"
+                  ><i
+                    class="bi bi-caret-down-fill btn rounded-circle px-2 py-1 btn-outline-primary-40 news-btn-hover fw-bold"
+                  ></i
+                ></span>
               </div>
             </button>
             <!-- 展開 -->
             <div id="news-list-4" class="accordion-collapse collapse">
               <div class="accordion-body px-lg-10 py-lg-10 p-2">
                 <div class="news-img-open rounded-4 overflow-hidden">
-                  <img src="../assets/images/ad-news-4.png" alt="" class="img-fluid">
+                  <img
+                    src="../assets/images/ad-news-4.png"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="d-flex flex-column mt-lg-8 mt-5">
-                  <div class="d-flex justify-content-lg-between align-items-lg-start flex-lg-row-reverse flex-column gap-2">
-                    <p class="text-neutral-60 fs-lg-9 fs-7"><time datetime="2025-06-20">2025/06/20</time></p>
-                    <h2 class="text-neutral-100 fw-bold fs-lg-3 fs-5">#涼爽登場 加購 \生乳檸檬甜甜/ 滿額免運!!</h2>
+                  <div
+                    class="d-flex justify-content-lg-between align-items-lg-start flex-lg-row-reverse flex-column gap-2"
+                  >
+                    <p class="text-neutral-60 fs-lg-9 fs-7">
+                      <time datetime="2025-06-20">2025/06/20</time>
+                    </p>
+                    <h2 class="text-neutral-100 fw-bold fs-lg-3 fs-5">
+                      #涼爽登場 加購 \生乳檸檬甜甜/ 滿額免運!!
+                    </h2>
                   </div>
-                  <div class="d-flex gap-lg-12 justify-content-lg-between flex-lg-row flex-column justify-content-start">
+                  <div
+                    class="d-flex gap-lg-12 justify-content-lg-between flex-lg-row flex-column justify-content-start"
+                  >
                     <div class="d-flex gap-5 flex-column mt-5 fs-9 lh-base">
                       <p>🎉 6/20 起 全門市熱烈販售 / 新上市！快來嚐鮮🎉</p>
-                      <p><span class="fw-bold">生乳檸檬甜甜圈🍋</span><br>
-                      選用新鮮檸檬製成果泥，結合法式滑順生乳內餡，酸中帶甜、柔和清新。不僅不膩口，每一口都能感受到夏天的微風與陽光☀️🍃</p>                    
-                      <p>推薦冰冰吃更對味，搭配冷萃咖啡或氣泡飲也超級剛好🥤❄️！快帶上好友一起來品嚐這款清爽新甜點吧💛</p>
-                      <p><span class="fw-bold">‼ 滿額免運優惠中‼ </span><br>※單筆消費限折扣乙次</p>
+                      <p>
+                        <span class="fw-bold">生乳檸檬甜甜圈🍋</span><br />
+                        選用新鮮檸檬製成果泥，結合法式滑順生乳內餡，酸中帶甜、柔和清新。不僅不膩口，每一口都能感受到夏天的微風與陽光☀️🍃
+                      </p>
+                      <p>
+                        推薦冰冰吃更對味，搭配冷萃咖啡或氣泡飲也超級剛好🥤❄️！快帶上好友一起來品嚐這款清爽新甜點吧💛
+                      </p>
+                      <p>
+                        <span class="fw-bold">‼ 滿額免運優惠中‼ </span
+                        ><br />※單筆消費限折扣乙次
+                      </p>
                       <div class="d-flex justify-content-between">
-                        <a href="item_details-creamlemon.html" class="fw-bold rounded-pill news-link-font-hover news-link" target="_blank">享用夏日的透心涼 >></a>                        
-                        <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-4" aria-expanded="true" aria-controls="news-title-4">
-                          <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
-                        </button>                        
-                      </div>                     
+                        <a
+                          href="item_details-creamlemon.html"
+                          class="fw-bold rounded-pill news-link-font-hover news-link"
+                          target="_blank"
+                          >享用夏日的透心涼 >></a
+                        >
+                        <button
+                          class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-none d-block"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#news-list-4"
+                          aria-expanded="true"
+                          aria-controls="news-title-4"
+                        >
+                          <i
+                            class="bi bi-caret-up-fill d-block"
+                            style="transform: translateY(-2px)"
+                          ></i>
+                        </button>
+                      </div>
                     </div>
-                    <button class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-block d-none mb-3" type="button"  data-bs-toggle="collapse" data-bs-target="#news-list-4" aria-expanded="true" aria-controls="news-title-4">
-                      <i class="bi bi-caret-up-fill d-block" style="transform: translateY(-2px);"></i>
-                    </button>                  
+                    <button
+                      class="btn btn-outline-primary-40 rounded-circle news-btn-hover fw-bold align-self-end px-2 py-1 d-lg-block d-none mb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#news-list-4"
+                      aria-expanded="true"
+                      aria-controls="news-title-4"
+                    >
+                      <i
+                        class="bi bi-caret-up-fill d-block"
+                        style="transform: translateY(-2px)"
+                      ></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>      
+        </div>
       </section>
-      <img src="../assets/images/news/news-letter.svg" alt="" class="position-absolute news-deco-img-letter">
+      <img
+        src="../assets/images/news/news-letter.svg"
+        alt=""
+        class="position-absolute news-deco-img-letter"
+      />
     </main>
 
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
-    <script type="module" src="../news.js"></script>
   </body>
 </html>

@@ -34,12 +34,10 @@
     <title>甜甜熊貓｜TenTen Donut - 甜點專賣</title>
   </head>
   <body>
-    <div id="userHeader">
-      <!-- 已登入 -->
+    <div id="userHeader" style="visibility: hidden">
       <%- include('./layout/header-profile'); -%>
     </div>
-    <div id="guestHeader">
-      <!-- 未登入時顯示 -->
+    <div id="guestHeader" style="visibility: hidden">
       <%- include('./layout/header'); -%>
     </div>
 
@@ -53,7 +51,7 @@
                 <!-- 照片 1 -->
                 <div class="swiper-slide login-card border-0">
                   <img
-                    src="../assets/images/login-4.png"
+                    src="../assets/images/login-3.png"
                     alt=""
                     class="login-img h-100 w-100 object-fit-cover"
                   />
@@ -61,7 +59,7 @@
                 <!-- 照片 2 -->
                 <div class="swiper-slide login-card border-0">
                   <img
-                    src="../assets/images/login-2.jpg"
+                    src="../assets/images/login-4.png"
                     alt=""
                     class="login-img h-100 w-100 object-fit-cover"
                   />
@@ -69,7 +67,7 @@
                 <!-- 照片 3 -->
                 <div class="swiper-slide login-card border-0">
                   <img
-                    src="../assets/images/login-3.png"
+                    src="../assets/images/login-2.jpg"
                     alt=""
                     class="login-img h-100 w-100 object-fit-cover"
                   />
@@ -196,7 +194,6 @@
                   <a href="join.html" class="link">立即註冊</a>
                 </p>
               </div>
-            
             </div>
           </form>
         </div>
@@ -208,6 +205,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
     <script type="module" src="../login.js"></script>
-
   </body>
 </html>

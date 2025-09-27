@@ -1,0 +1,58 @@
+// 去除手風琴預設樣式
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid $neutral-40;
+}
+
+.accordion-button {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $primary-40 !important;
+}
+
+.accordion-button:focus,
+.accordion-button:focus-visible,
+.accordion-button:not(.collapsed) {
+  outline: none;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+// 訂單內容
+.infoHeading {
+  padding-left: 16px;
+  border-left: 8px solid $neutral-100;
+}
+
+.itemsList {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+}
+
+.item li {
+  width: 120px;
+  margin: 0;
+}
+
+.item li:first-child {
+  width: 200px;
+}
+
+@media (max-width: 996px) {
+  .item li {
+    width: 80px;
+  }
+
+  .item li:first-child {
+    width: 150px;
+  }
+}
