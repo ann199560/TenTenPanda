@@ -118,4 +118,44 @@ inputs.forEach(input => {
   setupToggle("passwordInput", "togglePassword");
   setupToggle("passwordReInput", "togglePasswordRe");
 
+// 退換貨政策 彈出視窗
+document.getElementById("returnLink").addEventListener("click", function(e){
+  e.preventDefault();
+
+  const width = 1280;
+  const height = 720;
+
+  const left = window.screenLeft + (window.innerWidth - width) / 2;
+  const top = window.screenTop + (window.innerHeight - height) / 2;
+
+  window.open(
+  "./return.html",
+  "myWindow",
+  `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`
+  );
+  window.open(
+  "./privacy.html",
+  "myWindow",
+  `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`
+  );
+});
+
+// 隱私權政策 彈出視窗
+document.getElementById("privacyLink").addEventListener("click", function(e){
+  e.preventDefault();
+
+  const width = 1280;
+  const height = 720;
+
+  const left = window.screenLeft + (window.innerWidth - width) / 2;
+  const top = window.screenTop + (window.innerHeight - height) / 2;
+
+  window.open(
+  "./privacy.html",
+  "myWindow",
+  `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`
+  );
+});
+
+
 // join 頁面 - end
