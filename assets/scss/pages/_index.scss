@@ -382,32 +382,28 @@
     }
   }
 
-  /* 點擊（radio:checked）→ 顯示對應圖片 */
-  #n1:checked ~ .row .news-preview [data-key="1"],
-  #n2:checked ~ .row .news-preview [data-key="2"],
-  #n3:checked ~ .row .news-preview [data-key="3"],
-  #n4:checked ~ .row .news-preview [data-key="4"] {
-    opacity: 1;
-  }
+/* 預設先顯示 n1 圖，不靠 checked */
+.news-preview [data-key="1"] {
+  opacity: 1;
+}
 
-  /* 點擊後：對應那筆標題維持同色 */
-  #n1:checked ~ .row label[for="n1"] .news-title,
-  #n2:checked ~ .row label[for="n2"] .news-title,
-  #n3:checked ~ .row label[for="n3"] .news-title,
-  #n4:checked ~ .row label[for="n4"] .news-title {
-    color: $primary-40;
-  }
+/* radio:hover → 顯示對應圖片 */
+#n1:hover ~ .row .news-preview [data-key="1"],
+#n2:hover ~ .row .news-preview [data-key="2"],
+#n3:hover ~ .row .news-preview [data-key="3"],
+#n4:hover ~ .row .news-preview [data-key="4"] {
+  opacity: 1;
+}
 
-  /* —— Hover 顯示圖片：data-hover 版本（用極小 JS 設定 .news 的 data-hover="1~4"） */
-  &[data-hover] .news-preview .preview-img {
-    opacity: 0 !important;
-  }
-  &[data-hover="1"] .news-preview [data-key="1"],
-  &[data-hover="2"] .news-preview [data-key="2"],
-  &[data-hover="3"] .news-preview [data-key="3"],
-  &[data-hover="4"] .news-preview [data-key="4"] {
-    opacity: 1 !important;
-  }
+/* checked 或 hover 才讓文字上色 */
+#n1:checked ~ .row label[for="n1"] .news-title,
+#n2:checked ~ .row label[for="n2"] .news-title,
+#n3:checked ~ .row label[for="n3"] .news-title,
+#n4:checked ~ .row label[for="n4"] .news-title,
+.row label:hover .news-title {
+  color: $primary-40;
+}
+
 
   /* 文字 RWD */
   .news-detail {
